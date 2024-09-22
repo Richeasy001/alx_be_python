@@ -20,12 +20,12 @@ def main():
             return
 
     if time_bound == "yes":
-        reminder += " that requires immediate attention today!"
+        print(f"Reminder: {reminder} that requires immediate attention today!")
     else:
-        reminder += ". Consider completing it when you have free time."
+        print(f"Note: {reminder} Consider completing it when you have free time.")
 
-    # Provide a customized reminder
-    print(f"{reminder}")
+    # # Provide a customized reminder
+    # print(f"{reminder}")
 
 if __name__ == "__main__":
     main()

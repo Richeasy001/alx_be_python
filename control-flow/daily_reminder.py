@@ -14,17 +14,15 @@ def main():
         case "medium":
             reminder = f"'{task}' is a medium priority task"
         case "low":
-            reminder = f"'{task}' is a low priority task"
+            reminder = f"'{task}' is a low priority task."
         case _:
             print("Invalid priority level. Please enter high, medium, or low.")
             return
 
     if time_bound == "yes":
-        reminder += " that requires immediate attention today!"
+        print(f"{reminder} that requires immediate attention today!")
     else:
-        reminder += ". Consider completing it when you have free time."
-
-    print(reminder)
+        print(f"{reminder}. Consider completing it when you have free time.")
 
 if __name__ == "__main__":
     main()
